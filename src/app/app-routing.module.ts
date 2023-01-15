@@ -18,3 +18,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+export const RoutingComponents = [HomePageComponent, EyeglassPageComponent, ContactPageComponent, SignupPageComponent];

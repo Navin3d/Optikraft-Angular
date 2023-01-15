@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -17,6 +17,7 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 @NgModule({
   declarations: [
     AppComponent,
+    RoutingComponents,
     NavbarComponent,
     HomePageComponent,
     FooterComponent,
