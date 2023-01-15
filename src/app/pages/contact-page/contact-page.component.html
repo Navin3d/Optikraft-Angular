@@ -1,0 +1,43 @@
+<!-- <h1>Contact Form</h1>
+<div class="container">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" method="POST">
+    <label for="fname"><strong>First Name</strong></label>
+    <input type="text" id="fname" (input)="input($event)" name="firstname" value="" formControlName="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" (input)="input($event)" name="lastname" value="" formControlName="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" (input)="input($event)" name="country" value="" formControlName="country">
+      <option value="india">INDIA</option>
+      <option value="australia">AUSTRALIA</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" (input)="input($event)" name="subject" value="" formControlName="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div> -->
+
+<h1>Contact Form</h1>
+<div class="container">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" method="POST">
+    <label for="fname"><strong>First Name</strong></label>
+    <input type="text" id="fname" name="firstname" value="" formControlName="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" value="" formControlName="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country" value="" formControlName="country">
+      <option value="india">INDIA</option>
+      <option value="australia">AUSTRALIA</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" value="" formControlName="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>

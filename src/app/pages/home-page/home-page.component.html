@@ -1,3 +1,38 @@
 <app-navbar></app-navbar>
-<p>Home-page works!</p>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/slidehowMobile1_1000x.jpg?v=1584338925"
+                width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/SM_-_New_website_banners_-Category_banner_1900x.jpg?v=1584614524"
+                width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.shopify.com/s/files/1/0015/2879/1092/files/sundown-men_9d126f4d-34ef-4d58-9d72-52bf70899547_3000x.jpg?v=15853093193000w"
+                width="100%" height="500">
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<div>
+    <h2>Collections</h2>
+</div>
+<br>
+<div *ngFor="let cardDataEach of cardDatas">
+    <app-home-page-card [cardData]="cardDataEach"></app-home-page-card>
+</div>
 <app-footer></app-footer>

@@ -1,3 +1,5 @@
 <app-navbar></app-navbar>
-<p>eyeglass-page works!</p>
+<div *ngFor="let cardData of cardDatas">
+    <app-eyeglass-page-card [data]="cardData"></app-eyeglass-page-card> 
+</div>
 <app-footer></app-footer>
